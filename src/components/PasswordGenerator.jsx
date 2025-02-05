@@ -43,28 +43,48 @@ export default function passwordGenerator() {
             value={length}
             onChange={(e)=>{ setLength(e.target.value);
             }}
-            className="w-full bg-gray-950 appearance-none rounded-3xl h-2 accent-gray-50 "
+            className="w-full  rounded-3xl h-2 accent-green-300 "
           />
         </div>
 
-        <div className="flex flex-col px-4">
-          <label htmlFor="upperCase">
-            <input type="checkbox" name="upperCase" id="upperCase" />
-            <span> Include Uppercase Letters</span>
+        <div className="flex flex-col px-4 gap-2">
+          <label htmlFor="upperCase" className="flex gap-1">
+            <input type="checkbox" name="upperCase" id="upperCase"  className="w-4 h-4 top-1 appearance-none border-2 border-gray-400 cursor-pointer 
+               checked:bg-green-500 checked:border-green-500 checked:ring-2 checked:ring-green-300 
+               relative transition-all duration-200
+               checked:before:content-['✔'] checked:before:absolute checked:before:text-white checked:before:text-sm 
+               checked:before:font-bold checked:before:left-1/2 checked:before:top-1/2 
+               checked:before:-translate-x-1/2 checked:before:-translate-y-1/2 " />
+            <span >Include Uppercase Letters</span>
           </label>
 
-          <label htmlFor="lowerCase">
-            <input type="checkbox" name="lowerCase" id="lowerCase" />
+          <label htmlFor="lowerCase" className="flex gap-1" >
+            <input type="checkbox" name="lowerCase" id="lowerCase" className="w-4 h-4 top-1 appearance-none border-2 border-gray-400 cursor-pointer 
+               checked:bg-green-500 checked:border-green-500 checked:ring-2 checked:ring-green-300 
+               relative transition-all duration-200
+               checked:before:content-['✔'] checked:before:absolute checked:before:text-white checked:before:text-sm 
+               checked:before:font-bold checked:before:left-1/2 checked:before:top-1/2 
+               checked:before:-translate-x-1/2 checked:before:-translate-y-1/2 " />
             <span>Include Lowercase Letters</span>
           </label>
 
-          <label htmlFor="number">
-            <input type="checkbox" name="number" id="number" />
+          <label htmlFor="number" className="flex gap-1">
+            <input type="checkbox" name="number" id="number" className="w-4 h-4 top-1 appearance-none border-2 border-gray-400 cursor-pointer 
+               checked:bg-green-500 checked:border-green-500 checked:ring-2 checked:ring-green-300 
+               relative transition-all duration-200
+               checked:before:content-['✔'] checked:before:absolute checked:before:text-white checked:before:text-sm 
+               checked:before:font-bold checked:before:left-1/2 checked:before:top-1/2 
+               checked:before:-translate-x-1/2 checked:before:-translate-y-1/2 " />
             <span>Include Numbers</span>
           </label>
 
-          <label htmlFor="symbols">
-            <input type="checkbox" name="symbols" id="symbols" />
+          <label htmlFor="symbols" className="flex gap-1">
+            <input type="checkbox" name="symbols" id="symbols"  className="w-4 h-4 top-1 appearance-none border-2 border-gray-400 cursor-pointer 
+               checked:bg-green-500 checked:border-green-500 checked:ring-2 checked:ring-green-300 
+               relative transition-all duration-200
+               checked:before:content-['✔'] checked:before:absolute checked:before:text-white checked:before:text-sm 
+               checked:before:font-bold checked:before:left-1/2 checked:before:top-1/2 
+               checked:before:-translate-x-1/2 checked:before:-translate-y-1/2 "/>
             <span>Include Numbers</span>
           </label>
         </div>
